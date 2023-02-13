@@ -18,7 +18,8 @@ int main(){
 // ! Tavola pitagorica
 /* 
 int main(){
-	int i,j;
+	int i;
+    int j;
         const int n=10;
 	
 	for(i=1; i<=n; i++) {
