@@ -12,11 +12,9 @@ int piuGrande(int num,int max){
             max = num;
         }
     }
-    cout << "Il numero più grande è: " << max << endl;
     return max;
     // ! output numero più grande
 }
-
 
 // ! prende in input un numero 
 bool isEven(int n){
@@ -24,11 +22,11 @@ bool isEven(int n){
     r = n % 2;
   if (r == 0)
   {
-    cout << "true" << endl;
+    return true;
   }
   else
   {
-    cout << "false" << endl;
+    return false;
   }
   return 0;
 //! output true pari false dispari
@@ -38,8 +36,7 @@ bool isEven(int n){
 double costoTotale(double prezzoIniziale,int nRate){
     double interesse = prezzoIniziale * 0.05;
     double prezzoFinale = (prezzoIniziale + interesse);
-
-    cout <<"Prezzo finale: " << prezzoFinale <<endl;;
+    return prezzoFinale;
     // ! output costo totale del prodotto
 }
 
@@ -62,11 +59,11 @@ bool isBetween(int a, int b, int c)
 {
     if (a < b && b < c)
     {
-        cout << "B è compreso tra a e c" << endl;
+        return "B è compreso tra a e c";
     }
     else
     {
-        cout << "B non è compreso tra a e c" << endl;
+        return "B non è compreso tra a e c";
     }
 //! ci restituisce se il numero intermedio è compreso tra gli altri 2
 }
@@ -81,15 +78,15 @@ bool bisestile(int anno)
     {
         if (divisibilePer100 == 0)
         {
-            cout << false << endl;
+            return false;
         }
         else
         {
-            cout << true << endl;
+            return true;
         }
     }
     else
-        cout << false << endl;
+        return false;
 // ! restituisce true se è bisestile e false se non lo è.
     return 0;
 }
