@@ -8,9 +8,10 @@ using namespace std;
 // ! Tabellina del 7
 int main(){
     int n = 7;
-    for(int i = 0; i <= 10; i++){
+    for(int i = 1; i <= 10; i++){
         cout<<n*i<<endl;
     }
+    return 0;
 }
 
 
