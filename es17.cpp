@@ -12,30 +12,67 @@ F(n) = F(n-1) + F(n-2) per n > 1
 #include <cmath>
 using namespace std;
 
-int main() {
-   int n, t1 = 0, t2 = 1, temporaryT = 0;
+/* solution 1
 
-   cout << "Inserisci un numero intero positivo: ";
-   cin >> n;
+int main()
+{
+    int n, t1 = 0, t2 = 1, temporaryT = 0;
 
-   cout << "Sequenza di Fibonacci fino a " << n << ":\n";
+    cout << "Inserisci un numero intero positivo: ";
+    cin >> n;
 
-   for (int i = 1; temporaryT <= n; ++i) {
-      if(i == 1) {
-         cout << t1 << ", ";
-         continue;
-      }
-      if(i == 2) {
-         cout << t2 << ", ";
-         continue;
-      }
-      temporaryT = t1 + t2;
-      t1 = t2;
-      t2 = temporaryT;
+    cout << "Sequenza di Fibonacci fino a " << n << ":\n";
 
-      if(temporaryT <= n)
-         cout << temporaryT << ", ";
-   }
-   return 0;
+    for (int i = 1; temporaryT <= n; ++i)
+    {
+        if (i == 1)
+        {
+            cout << t1 << ", ";
+        }
+        if (i == 2)
+        {
+            cout << t2 << ", ";
+        }
+        temporaryT = t1 + t2;
+        t1 = t2;
+        t2 = temporaryT;
+
+        if (temporaryT <= n)
+            cout << temporaryT << ", ";
+    }
+    return 0;
+}
+*/
+
+int howMany = 0;
+void fibonacciSequence(int howMany)
+{
+    int t1 = 0, t2 = 1, temporaryT = 0;
+
+    cout << "Inserisci un numero intero positivo: ";
+    cin >> howMany;
+
+    cout << "Sequenza di Fibonacci fino a " << howMany << ":\n";
+
+    for (int i = 1; temporaryT <= howMany; ++i)
+    {
+        if (i == 1)
+        {
+            cout << t1 << ", ";
+        }
+        if (i == 2)
+        {
+            cout << t2 << ", ";
+        }
+        temporaryT = t1 + t2;
+        t1 = t2;
+        t2 = temporaryT;
+
+        if (temporaryT <= howMany)
+            cout << temporaryT << ", ";
+    }
 }
 
+int main (){
+    fibonacciSequence(10);
+}
