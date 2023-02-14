@@ -1,1 +1,2 @@
-*.exe
+# Ignore files with extension `.exe`
+.DS_Store

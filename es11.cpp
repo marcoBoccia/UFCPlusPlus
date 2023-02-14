@@ -5,19 +5,33 @@
 #include <cmath>
 using namespace std;
 
-int main()
+// Situation 1
+int calculateSum(int x)
 {
-    int i;
-    int n;
-    int somma;
-    
-    i = 0;
-    n = 100;
+  int sum = 0;
+  for (int i = 0; i <= x; i++)
+  {
+    sum = sum + i;
+  }
+  return sum;
+}
 
-    while (i <= n){
-        somma += i;
-        i++;
-    }
-    cout <<"la somma è "<< somma << endl;
-    return 0;
+// Situation 2
+void printSum(int x){
+  int sum = 0;
+  for (int i = 0; i <= x; i++){
+    sum = sum + i;
+  }
+  cout << sum << endl;
+}
+
+int main()
+// Situation 1
+{
+  int result = calculateSum(100);
+  cout << result << endl;
+  // Situation 2
+  printSum(100);
+
+  return 0;
 }
