@@ -10,7 +10,7 @@ Ad esempio, se N=20 allora K risulta 5, infatti
 using namespace std;
 
 // solution 1
-/*
+
 int main()
 {
     int N, K = 0, somma = 0;
@@ -27,7 +27,7 @@ int main()
 
     return 0;
 }
-*/
+
 
 /* solution 2
 int N = 0;
